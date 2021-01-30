@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/coreview_search.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/GoogleSearch.feature");
 formatter.feature({
   "name": "Google Search",
   "description": "",
@@ -22,7 +22,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.coreview.step_definitions.Coreview_search_step_definitions.The_user_is_on_the_www_google_com()"
+  "location": "com.coreview.step_definitions.GoogleSearchStepDefinitions.The_user_is_on_the_www_google_com()"
 });
 formatter.result({
   "status": "passed"
@@ -36,7 +36,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.coreview.step_definitions.Coreview_search_step_definitions.the_user_searchs_for(java.lang.String)"
+  "location": "com.coreview.step_definitions.GoogleSearchStepDefinitions.the_user_searches_for(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -50,7 +50,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.coreview.step_definitions.Coreview_search_step_definitions.The_user_scrolls_to_bottom_of_the_page_and_clicks_next()"
+  "location": "com.coreview.step_definitions.GoogleSearchStepDefinitions.The_user_scrolls_to_bottom_of_the_page_and_clicks_next()"
 });
 formatter.result({
   "status": "passed"
@@ -60,11 +60,11 @@ formatter.afterstep({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user clicks the second results and waits 5 seconds",
+  "name": "The user clicks the second results and waits 5 seconds",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.coreview.step_definitions.Coreview_search_step_definitions.the_user_clicks_the_second_results_and_waits_seconds(java.lang.Integer)"
+  "location": "com.coreview.step_definitions.GoogleSearchStepDefinitions.The_user_clicks_the_second_results_and_waits_seconds(java.lang.Integer)"
 });
 formatter.result({
   "status": "passed"

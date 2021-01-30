@@ -12,6 +12,8 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
+import java.util.Locale;
+
 public class Driver {
     private Driver() {
 
@@ -23,7 +25,7 @@ public class Driver {
         // Test
         if (driver == null) {
             // this line will tell which browser should open based on the value from properties file
-            String browser = ConfigurationReader.get("browser");
+            String browser = ConfigurationReader.get("browser").toLowerCase(Locale.ROOT);
             switch (browser) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
