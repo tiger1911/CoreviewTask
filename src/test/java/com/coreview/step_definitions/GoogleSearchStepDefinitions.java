@@ -34,7 +34,7 @@ public class GoogleSearchStepDefinitions {
 
     @Given("The user scrolls to bottom of the page and clicks next")
     public void The_user_scrolls_to_bottom_of_the_page_and_clicks_next() {
-        BrowserUtils.waitFor(2);
+
         WebElement nextButton = Driver.get().findElement(By.xpath("//span[@style='display:block;margin-left:53px']"));
         BrowserUtils.clickWithJS(nextButton);
     }
@@ -42,7 +42,7 @@ public class GoogleSearchStepDefinitions {
 
     @When("The user clicks the second results and waits {int} seconds")
     public void The_user_clicks_the_second_results_and_waits_seconds(Integer int1) {
-        BrowserUtils.waitFor(2);
+
         WebElement secondResult = Driver.get().findElement(By.xpath("(//a/h3[1])[2]"));
         secondResult.click();
         BrowserUtils.waitFor(5);
