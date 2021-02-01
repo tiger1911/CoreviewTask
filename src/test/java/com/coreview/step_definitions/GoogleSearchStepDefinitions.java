@@ -40,12 +40,12 @@ public class GoogleSearchStepDefinitions {
     }
 
 
-    @When("The user clicks the second results and waits {int} seconds")
-    public void The_user_clicks_the_second_results_and_waits_seconds(Integer int1) {
+    @When("The user clicks the second result and waits {int} seconds")
+    public void The_user_clicks_the_second_result_and_waits_seconds(Integer time) {
 
         WebElement secondResult = Driver.get().findElement(By.xpath("(//a/h3[1])[2]"));
         secondResult.click();
-        BrowserUtils.waitFor(5);
+        BrowserUtils.waitFor(time);
     }
 
 

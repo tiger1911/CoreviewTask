@@ -60,11 +60,11 @@ formatter.afterstep({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user clicks the second results and waits 5 seconds",
+  "name": "The user clicks the second result and waits 5 seconds",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.coreview.step_definitions.GoogleSearchStepDefinitions.The_user_clicks_the_second_results_and_waits_seconds(java.lang.Integer)"
+  "location": "com.coreview.step_definitions.GoogleSearchStepDefinitions.The_user_clicks_the_second_result_and_waits_seconds(java.lang.Integer)"
 });
 formatter.result({
   "status": "passed"
