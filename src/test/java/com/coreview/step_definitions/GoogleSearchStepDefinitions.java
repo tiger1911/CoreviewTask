@@ -20,7 +20,7 @@ public class GoogleSearchStepDefinitions {
     }
 
     @Given("The user searches for {string}")
-    public void the_user_searches_for(String string) {
+    public void the_user_searches_for(String word) {
 
         WebElement iframe = Driver.get().findElement(By.xpath("//*[@id=\"cnsw\"]/iframe"));
         Driver.get().switchTo().frame(iframe);
@@ -29,7 +29,7 @@ public class GoogleSearchStepDefinitions {
         Driver.get().switchTo().parentFrame();
         WebElement searchBox = Driver.get().findElement(By.xpath("//input[@name='q']"));
         searchBox.click();
-        searchBox.sendKeys("CoreView"+ Keys.ENTER);
+        searchBox.sendKeys(word + Keys.ENTER);
     }
 
     @Given("The user scrolls to bottom of the page and clicks next")
